@@ -5,7 +5,6 @@ import Header from "@components/Header";
 import styles from './App.module.css';
 
 const App = () => {
-	
 	return (
 		<> 
 			<div className={styles.wrapper}>
@@ -16,8 +15,8 @@ const App = () => {
 						<Route 
 							key={index}
 							exact={route.exact}
+							element={<route.element/>}  
 							path={route.path}
-							element={route.element()} 
 						/>
 					))}
 				</Routes>

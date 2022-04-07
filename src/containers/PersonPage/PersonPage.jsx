@@ -2,15 +2,11 @@ import PropType from 'prop-types';
 import { useParams } from 'react-router';
 import styles from './PersonPage.module.css';
 
-const PersonPage = () => {
-
-	console.log(useParams());
- 
-    const {id} = useParams();
+const PersonPage = ( {id} ) => {
 
     return (
         <>
-            <h1 className={styles.title}>Person Page - {id} </h1>
+            <h1 className={styles.title}>Person Page -  {useParams().id} </h1>
         </>
     )
 }
