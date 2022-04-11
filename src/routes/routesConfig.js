@@ -9,11 +9,11 @@ const routesConfig = [
       element: HomePage
    },
    {
-      path: '/people',
+      path: '/people/*',
       element: PeoplePage
    },
    {
-      path: '/people/:id',
+      path: '/people/:id/',
       element: PersonPage
    },
    {

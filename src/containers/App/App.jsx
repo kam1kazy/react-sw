@@ -14,7 +14,6 @@ const App = () => {
 					{routesConfig.map((route, index) => (
 						<Route 
 							key={index}
-							exact={route.exact}
 							element={<route.element/>}  
 							path={route.path}
 						/>

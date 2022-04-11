@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 
 import PersonPhoto from '@components/PersonPage/PersonPhoto';
 import PersonInfo from '@components/PersonPage/PersonInfo';
+import PersonLinkBack from '@components/PersonPage/PersonLinkBack';
 
 import { API_PERSON } from '@constants/api'
 import { withErrorApi } from '@hoc-helpers/withErrorApi'
@@ -46,6 +47,7 @@ const PersonPage = ({ match, setErrorApi }) => {
 
     return (
         <>
+            <PersonLinkBack />
             <div className={styles.wrapper}>
                 <span className={styles.person__name}>{personName}</span> 
 
