@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from './PeopleNavigation.module.css'; 
-import UIButton from '@UI/UIButton';
+import UIButton from '@ui/UIButton';
 
 const PeopleNavigation = ({ getResource, prevPage, nextPage, counterPage }) => {
 
